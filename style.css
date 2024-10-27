@@ -17,12 +17,17 @@ body {
     color: #fff;
 }
 #task-input {
-    padding: 20px 15px 20px 100px;
+    padding: 20px 15px;
     border-radius: 40px;
     background-color: rgb(183, 212, 222);
     width: 600px;
     box-shadow: 4px 4px rgb(0, 0, 0);
     position: relative;
+    font-size: 20px;
+}
+#message {
+    width: 100%;
+    text-align: center;
 }
 .container {
     text-align: center;
@@ -32,5 +37,19 @@ body {
     font-size: 20px;
     position: absolute;
     transform: translate(-700px, 20px);
-    font-weight: ;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.content {
+    background-color: #7dce8a;
+    padding: 10px;
+    width: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
 }

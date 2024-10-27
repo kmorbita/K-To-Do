@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="initializePage()">
+    <script src="custom.js"></script>
     <div class="header">
         <img id="list-image" src="images/list.png" alt="list-image">
         <h1>My Tasks</h1>
     </div>
     <div class="container">
-        <input type="text" placeholder="Input a task" id="task-input">
-        <span>Add Task</span>
+        <input type="text" placeholder="Input a task" onkeyup="getInput(event)" id="task-input">
     </div>
+    <h1 id="message">No Tasks Defined.</h1>
+    <div class="content-container" id="content"></div>
 </body>
 
 </html>
